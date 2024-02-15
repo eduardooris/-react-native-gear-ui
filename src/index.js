@@ -2,7 +2,7 @@ export * from './components/BTmenuRounded';
 export * from './components/ButtonDefault';
 export * from './components/Modal';
 export * from './components/ButtonFloat';
-export * from './components/UselessTextInput';
+export * from './components/SearchInput';
 export * from './components/BTswitchList';
 export * from './components/BoxButton';
 export * from './components/BTmenu';
