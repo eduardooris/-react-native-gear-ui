@@ -7,6 +7,7 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     marginBottom: correctSize(7),
+     backgroundColor: '#FFF',
     width: correctSize(65),
     height: correctSize(65),
     ...Platform.select({
