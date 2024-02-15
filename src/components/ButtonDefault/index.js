@@ -21,14 +21,14 @@ const ButtonStyle = {
 };
 
 export const ButtonDefault = (props) => {
-  const { type = 'default', style, iconName = 'menu', color } = props;
+  const { type = 'default', style, iconName = 'menu', color, styleText } = props;
 
   return (
     <TouchableOpacity
       {...props}
       style={[styles.container, ButtonStyle[type], style]}
     >
-      <Text style={ButtonStyleText[type]}>{props.children}</Text>
+      <Text style={[ButtonStyleText[type], styleText]}>{props.children}</Text>
       {type === 'withIcon' && (
         <MaterialIcons
           style={{ left: correctSize(10) }}
