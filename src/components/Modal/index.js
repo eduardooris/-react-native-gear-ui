@@ -1,13 +1,7 @@
-import React from 'react';
-import { Pressable, Text, View } from 'react-native';
-import { styles } from './styles';
-export const Modal = ({
-  title,
-  visible = false,
-  closeModal = () => {},
-  children,
-  titleStyle,
-}) => {
+import React from "react";
+import { Pressable, Text, View } from "react-native";
+import { styles } from "./styles";
+export const Modal = ({ title, visible, closeModal, children, titleStyle }) => {
   return (
     <>
       {visible && (
