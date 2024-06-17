@@ -4,8 +4,10 @@ import { correctSize } from "../../util/Size";
 export const styles = StyleSheet.create({
   container: {
     paddingHorizontal: correctSize(25),
-    paddingVertical: correctSize(10),
     borderRadius: correctSize(30),
+    alignItems: "center",
+    justifyContent: "center",
+    height: correctSize(38),
     ...Platform.select({
       ios: {
         shadowColor: "#000",
@@ -22,26 +24,23 @@ export const styles = StyleSheet.create({
   outlineButton: {
     backgroundColor: cssGlobal.branco,
     borderWidth: 2,
-    borderColor: "#000",
   },
   outlineButtonText: {
     color: "#000",
   },
   defaultButton: {
-    backgroundColor: cssGlobal.branco,
     borderWidth: 2,
   },
 
   defaultButtonText: {
-    color: cssGlobal.cinza,
+    color: cssGlobal.branco,
   },
   colorButton: {
-    backgroundColor: "#000",
     borderWidth: 2,
   },
 
   colorButtonText: {
-    backgroundColor: "#000",
+    backgroundColor: cssGlobal.preto,
     color: cssGlobal.branco,
   },
   darkButton: {
@@ -57,11 +56,6 @@ export const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
-    backgroundColor: "#000",
-    width: correctSize(100),
     borderWidth: 2,
-  },
-  withIconButtonText: {
-    color: cssGlobal.branco,
   },
 });
