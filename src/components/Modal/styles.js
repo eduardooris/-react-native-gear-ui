@@ -1,6 +1,5 @@
 import { StyleSheet } from "react-native";
 import cssGlobal from "../../util/cssGlobal";
-import hexGlobal from "../../util/hexGlobal";
 import { correctSize } from "../../util/Size";
 export const styles = StyleSheet.create({
   container: {
@@ -37,9 +36,8 @@ export const styles = StyleSheet.create({
   title: {
     fontSize: correctSize(17),
     fontFamily: "RobotoBold",
-    color: hexGlobal.hexPrim,
     marginTop: correctSize(20),
-    marginBottom: correctSize(10)
+    marginBottom: correctSize(10),
   },
   text: {
     fontSize: correctSize(13),
